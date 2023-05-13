@@ -1,0 +1,25 @@
+.imagen-nosotras .foto-mel img{
+    border-radius: 20%;
+    position:absolute;
+    transform: translateY(58%) translateX(500%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    
+}
+.contenido-textos p {
+    text-align: justify;
+    margin: 11px 3% 1em; 
+    font-size: 23px;
+}
+.imagen-nosotras .foto-abril img{
+    border-radius: 10%;
+    position:absolute;
+    transform: translateY(25%) translateX(410%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    
+}
+h2 {
+    color: rgb(43, 96, 121);
+    font-size: 35px;
+    text-align: center;
+    margin: 150px;
+}

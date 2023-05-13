@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open sans";
+    /* background: #55184118;  */
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: rgb(52, 113, 141);
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: url(../AUTOMATIC-FENCE/imagenes/1.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     background-attachment: fixed;
+}
+/* menu*/
+header nav{
+    position: fixed;
+    font-size: 10px;
+    display: inline-flex;
+    width: 100%;
+    top: 0px;
+    height: 70px;
+    background: #183955d2;
+    z-index: 10;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0; 
+}
+nav > div > a{ 
+    font-size: 22px; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+header nav > a:hover{ 
+    text-decoration:underline;
+}
+
+/* logo */
+
+nav .logo{
+    background: #18385500;
+    margin-left: 60px;
+    float: left;
+}
+
+nav > .logo > img{
+    object-fit: cover;
+    height: 80px;
+    width: 80%;
+
+}
+
+/* texto header */
+
+header .textos-header{
+    font-family: "Voga";
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align:right;
+    
+    
+}
+.textos-header h1{
+    font-size: 100px; /* tamaño letra*/
+    letter-spacing: 3px; /* agrega espacio entre letras */
+    transform: translateY(200%) translateX(-4%);
+}
+.textos-header h2{
+    font-size: 50px;
+    letter-spacing: 3px;
+    transform: translateY(400%) translateX(-20%);
+}
+
+/* contenido */
+
+main .sobre-introduccion{
+    padding: 30px 0 55px 0;
+}
+.contenedor-sobre-introduccion{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenido-textos > p{
+    font-size: 20px;
+    padding: 0px opx 30px 15px;
+    text-align: justify;
+    font-weight: 300;
+    margin: 10px 3% 1em; 
+}
+
+/*acerca de*/
+
+h3{
+    padding: 0 0 100px 0;
+}
+
+.acerca-de{
+    background: #22394e1f;
+}
+
+.galeria-acercad{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-acercad{
+    border-radius: 8%;
+    width: 24%;
+    margin-bottom: 15px; /*hacia abajo*/
+    margin-left: 15px;/*hacia los lados*/
+    height: 200px;
+    overflow:hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-acercad > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0); 
+    background: rgba(62, 114, 163, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria > img{
+    width: 50px;
+}
+.hover-galeria>p{
+    color: #fff;
+}
+.imagen-acercad:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*footer*/
+
+footer{
+    background: #183855;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenido-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.contenido-footer{
+    text-align: center;
+    font-size: 26px;
+}
+.contenido-footer h4{
+    
+    color: lavender;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    
+}
+.contenido-footer p{
+    color: lavender;
+}
+
+/*adaptacion a dispositivos moviles*/
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-introduccion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-introduccion .contenido-textos{
+        width: 90%;
+    }
+    .imagen-acercad{
+        width: 44%;
+    }
+}
