@@ -87,12 +87,12 @@ header .textos-header{
     
 }
 .textos-header h1{
-    font-size: 70px; /* tamaño letra*/
+    font-size: 60px; /* tamaño letra*/
     letter-spacing: 3px; /* agrega espacio entre letras */
     transform: translateY(200%) translateX(-4%);
 }
 .textos-header h2{
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 3px;
     transform: translateY(400%) translateX(-20%);
 }
