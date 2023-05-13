@@ -27,7 +27,7 @@ body{
 header{
     width: 100%;
     height: 600px;
-    background: url(../AUTOMATIC-FENCE/imagenes/1.png) no-repeat center center;
+    background: url(imagenes/1.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
