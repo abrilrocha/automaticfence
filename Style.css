@@ -87,7 +87,7 @@ header .textos-header{
     
 }
 .textos-header h1{
-    font-size: 100px; /* tamaño letra*/
+    font-size: 70px; /* tamaño letra*/
     letter-spacing: 3px; /* agrega espacio entre letras */
     transform: translateY(200%) translateX(-4%);
 }
